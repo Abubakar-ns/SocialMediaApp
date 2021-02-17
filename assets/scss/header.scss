@@ -17,15 +17,17 @@ ul{
         }
         #tagm{
             display: flex;
-            flex-direction: column ;
-            justify-content: space-around;
+            flex-direction: row ;
+            justify-content: space-between;
             margin-right: 20px;
-            
+            margin-top: 20px;
             a{
                 text-align: center;
                 font-size: 20px;
                 color: white;
                 font-weight:lighter;
+                
+                
                 
             }
             a:link {
@@ -37,32 +39,7 @@ ul{
 
         }
         
+        
     }
+    
 }
-/*
-.header-box{
-        height: 10%;
-        background-color: rgb(66,103,178);
-        margin-top: 0px ;
-        margin-left: -40px;
-        display: flex;
-        justify-content: space-between;
-        
-        
-}
-.tagn{
-    text-align: center;
-    font-size: 60px;
-    color: white;
-    font-weight:lighter;
-    vertical-align: middle;
-}
-a:link {
-    text-decoration: none;
-}
-a:hover {
-    color: black;
-}
-
-
-*/

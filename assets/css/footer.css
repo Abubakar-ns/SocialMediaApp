@@ -1,0 +1,25 @@
+footer div {
+  height: 10%;
+  background-color: #4267b2;
+  display: flex; }
+
+footer #bruh {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: lighter;
+  vertical-align: middle;
+  margin-right: 10px; }
+
+footer #yeet {
+  display: flex;
+  flex-direction: column; }
+  footer #yeet a {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: lighter; }
+  footer #yeet a:link {
+    text-decoration: none; }
+  footer #yeet a:hover {
+    color: black; }

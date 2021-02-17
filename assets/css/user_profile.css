@@ -1,2 +1,6 @@
 body {
   background-color: burlywood; }
+  body h1 {
+    margin-left: 20px; }
+  body p {
+    margin-left: 30px; }
