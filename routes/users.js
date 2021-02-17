@@ -17,5 +17,6 @@ router.post('/create-session',passport.authenticate(
     'local',
     {failureRedirect: '/users/sign-in'},
 ),usersController.createSession);
+/*router.post('/add-post', usersController.createPost);*/
 
 module.exports = router;
