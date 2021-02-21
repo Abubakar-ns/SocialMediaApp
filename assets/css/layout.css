@@ -1,6 +1,6 @@
 body {
   margin: 0; }
   body #layout-main {
-    height: 100%; }
+    height: inherit; }
   body li {
     list-style: none; }
