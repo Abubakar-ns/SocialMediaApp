@@ -10,8 +10,6 @@ router.post('/update/:id',passport.checkAuthentication, usersController.Update);
 router.get('/sign-up',usersController.signup);
 router.get('/sign-in', usersController.signin);
 router.get('/sign-out', usersController.destroySession);
-
-
 router.post('/create', usersController.create);
 //use passport as a middleware to authenticate
 router.post('/create-session',passport.authenticate(
