@@ -1,0 +1,20 @@
+#home-container{
+    display: flex;
+    min-height: 100%;
+    height: auto;
+    //background-color: blanchedalmond;
+    #feed-posts{
+        width: 70%;
+        padding: 10px;
+        #posts-list-container{
+         
+        }
+    }
+    #user-friends{
+        min-height: inherit;
+        width: 30%;
+        padding: 10px;
+        border-left: 1px solid rgb(41, 48, 51) ;
+        
+    }
+}

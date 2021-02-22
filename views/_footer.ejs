@@ -2,8 +2,14 @@
     <div>
         <div id="bruh">@CODIAL LICENSE</div>
         <div id="yeet">
-            <a href="/"> HOME</a>
-            <a href="/users/profile"> PROFILE</a>
+            <% if(locals.user){ %>
+                <a href="/"> HOME</a>
+                <a href="/users/profile/<%=user.id%>"> PROFILE</a>
+                
+            <%} else{%>
+                <a href="/"> HOME</a>
+            <%}%>
+            
         </div>
     </div>
     

@@ -1,8 +1,10 @@
 body{
-    
     margin: 0;
+    
     #layout-main{
-        height: inherit;
+        height: auto;
+        min-height: 100%;
+        margin: 0;
     }
     li{
         list-style: none;
