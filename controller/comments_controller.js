@@ -12,6 +12,17 @@ module.exports.create = async function(req, res){
             });
             post.comments.push(comment);
             post.save();
+            if (req.xhr){
+                // Similar for comments to fetch the user's id!
+                comment = await comment.populate('user', 'name').execPopulate();
+    
+                return res.status(200).json({
+                    data: {
+                        comment: comment
+                    },
+                    message: "Comment created!"
+                });
+            }
             req.flash('success','Comment Added');
             res.redirect('/');
             
@@ -36,6 +47,14 @@ module.exports.destroy = async function(req,res){
                     comment.remove();
                     //now we must delete the id of the this comment from the array of comments in our post
                     let post=await Post.findByIdAndUpdate(postId ,{ $pull: {comments : commentId}}); 
+                    if (req.xhr){
+                        return res.status(200).json({
+                            data: {
+                                commentId: req.params.id
+                            },
+                            message: "Post deleted"
+                        });
+                    }
                     req.flash('success','Comment Deleted');
                     return res.redirect('back');
 
