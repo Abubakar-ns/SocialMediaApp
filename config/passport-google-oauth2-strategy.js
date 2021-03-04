@@ -1,5 +1,5 @@
 const passport = require('passport');
-const googleStrategy = require('passport-google-auth').OAuth2Strategy();
+const googleStrategy = require('passport-google-oauth').OAuth2Strategy;
 const crypto = require('crypto');
 const User = require('../model/user');
 //tell passport to use a new strategy for google login
@@ -35,4 +35,4 @@ passport.use(new googleStrategy({
 
 ));
 module.exports= passport;
-//did we find the user in google db or our db?
+
